@@ -1,6 +1,6 @@
 package com.project.market.domain.repository;
 
-import com.project.market.domain.Product;
+import com.project.market.domain.dto.Product;
 
 import java.util.List;
 import java.util.Optional;

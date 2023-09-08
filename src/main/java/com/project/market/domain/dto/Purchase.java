@@ -1,5 +1,7 @@
 package com.project.market.domain;
 
+import com.project.market.domain.dto.PurchaseItem;
+
 import java.time.LocalDateTime;
 import java.util.List;
 

@@ -1,6 +1,6 @@
 package com.project.market.persistence;
 
-import com.project.market.domain.Product;
+import com.project.market.domain.dto.Product;
 import com.project.market.domain.repository.ProductRepositoryDTO;
 import com.project.market.persistence.crud.ProductCrudReposittory;
 import com.project.market.persistence.entities.DomainProduct;
