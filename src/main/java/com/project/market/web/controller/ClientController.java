@@ -22,7 +22,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/clients")
-@CrossOrigin(origins = "https://apimarket-production.up.railway.app/")
+@CrossOrigin(originPatterns = "https://apimarket-production.up.railway.app/*")
 public class ClientController {
     @Autowired
     private ClientService clientService;
