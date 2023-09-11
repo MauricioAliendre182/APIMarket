@@ -21,7 +21,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/purchases")
-@CrossOrigin(originPatterns = "https://apimarket-production.up.railway.app/**")
+//@CrossOrigin(originPatterns = "https://apimarket-production.up.railway.app/**")
 public class PurchaseController {
     @Autowired
     private PurchaseService purchaseService;
