@@ -1,4 +1,4 @@
-package com.project.market.domain;
+package com.project.market.domain.dto;
 
 public class Client {
     private String clientId;

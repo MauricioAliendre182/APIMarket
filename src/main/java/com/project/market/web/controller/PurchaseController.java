@@ -1,6 +1,6 @@
 package com.project.market.web.controller;
 
-import com.project.market.domain.Purchase;
+import com.project.market.domain.dto.Purchase;
 import com.project.market.domain.service.PurchaseService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;

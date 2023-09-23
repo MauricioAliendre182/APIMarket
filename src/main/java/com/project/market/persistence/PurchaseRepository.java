@@ -1,9 +1,8 @@
 package com.project.market.persistence;
 
-import com.project.market.domain.Purchase;
+import com.project.market.domain.dto.Purchase;
 import com.project.market.domain.repository.PurchaseRepositoryDTO;
 import com.project.market.persistence.crud.PurchaseCrudRepository;
-import com.project.market.persistence.entities.DomainProduct;
 import com.project.market.persistence.entities.DomainPurchase;
 import com.project.market.persistence.mapper.PurchaseMapper;
 import org.springframework.beans.factory.annotation.Autowired;

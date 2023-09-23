@@ -1,7 +1,5 @@
 package com.project.market.domain.dto;
 
-import com.project.market.domain.Category;
-
 public class Product {
     private int productId;
     private String name;

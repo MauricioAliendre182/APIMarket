@@ -1,6 +1,6 @@
 package com.project.market.persistence;
 
-import com.project.market.domain.Client;
+import com.project.market.domain.dto.Client;
 import com.project.market.domain.repository.ClientRepositoryDTO;
 import com.project.market.persistence.crud.ClientCrudRepository;
 import com.project.market.persistence.entities.DomainClient;

@@ -1,6 +1,6 @@
 package com.project.market.domain.service;
 
-import com.project.market.domain.Client;
+import com.project.market.domain.dto.Client;
 import com.project.market.domain.repository.ClientRepositoryDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
