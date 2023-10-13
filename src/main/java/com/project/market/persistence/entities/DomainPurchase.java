@@ -33,6 +33,7 @@ public class DomainPurchase {
     @JoinColumn(name = "id_cliente", insertable = false, updatable = false)
     private DomainClient client;
 
+    // This is on cascade due to it is neccesary to save a purchase along with PurchaseProduct class
     @OneToMany(mappedBy = "purchase", cascade = {CascadeType.ALL})
     private List<DomainPurchaseProduct> purchaseProducts;
 

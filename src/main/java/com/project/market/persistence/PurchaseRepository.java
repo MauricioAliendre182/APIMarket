@@ -31,6 +31,7 @@ public class PurchaseRepository implements PurchaseRepositoryDTO {
     }
 
     // Here we are storing the Purchase along with the PurchaseProduct
+    // It is an storage on cascade for every Purchase there is an article
     @Override
     public Purchase save(Purchase purchase) {
         DomainPurchase domainPurchase = mapper.toDomainPurchase(purchase);

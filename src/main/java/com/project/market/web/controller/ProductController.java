@@ -6,6 +6,7 @@ import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -20,9 +21,10 @@ import org.springframework.web.bind.annotation.DeleteMapping;
 
 import java.util.List;
 
+@Tag(name = "Products section")
 @RestController
 @RequestMapping("/products")
-//@CrossOrigin(originPatterns = "https://apimarket-production.up.railway.app/**")
+//@CrossOrigin(originPatterns = "http://localhost:4200/")
 public class ProductController {
     @Autowired
     private ProductService productService;

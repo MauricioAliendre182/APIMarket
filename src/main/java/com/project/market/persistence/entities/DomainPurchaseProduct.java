@@ -19,7 +19,7 @@ public class DomainPurchaseProduct {
     private Boolean state;
 
     // At the moment to store the Purchase on cascade it will know
-    // with which primary key belongs every product presents in a purchase
+    // which primary key belongs every product presents in a purchase
     @ManyToOne
     @MapsId("idPurchase")
     @JoinColumn(name = "id_compra", updatable = false, insertable = false)
