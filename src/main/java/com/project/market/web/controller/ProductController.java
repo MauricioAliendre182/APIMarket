@@ -24,7 +24,6 @@ import java.util.List;
 @Tag(name = "Products section")
 @RestController
 @RequestMapping("/products")
-//@CrossOrigin(originPatterns = "http://localhost:4200/")
 public class ProductController {
     @Autowired
     private ProductService productService;

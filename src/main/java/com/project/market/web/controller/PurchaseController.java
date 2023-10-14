@@ -24,7 +24,6 @@ import java.util.List;
 @Tag(name = "Purchases section")
 @RestController
 @RequestMapping("/purchases")
-//@CrossOrigin(originPatterns = "https://apimarket-production.up.railway.app/**")
 public class PurchaseController {
     @Autowired
     private PurchaseService purchaseService;

@@ -24,7 +24,6 @@ import java.util.List;
 @Tag(name = "Clients section")
 @RestController
 @RequestMapping("/clients")
-//@CrossOrigin(originPatterns = "https://apimarket-production.up.railway.app/**")
 public class ClientController {
     @Autowired
     private ClientService clientService;
