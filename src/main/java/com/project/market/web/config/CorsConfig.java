@@ -16,7 +16,7 @@ public class CorsConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**") // Define the URL patterns for which CORS should be allowed
-                        .allowedOrigins("http://localhost:4200/") // Replace with your frontend domain
+                        .allowedOrigins("http://localhost:4200") // Replace with your frontend domain
                         .allowedMethods("GET", "POST", "PUT", "DELETE")
                         .allowCredentials(true) // If you need to allow cookies
                         .allowedHeaders(HttpHeaders.CONTENT_TYPE,
