@@ -34,8 +34,8 @@ public class ProductService {
         return productRepositoryDTO.save(product);
     }
 
-    public Product update(Product product, Product productUpdate) {
-        return productRepositoryDTO.update(product, productUpdate);
+    public Product update(Product product, Product productUpdated, int productId) {
+        return productRepositoryDTO.update(product,productUpdated, productId);
     }
 
     public boolean delete(int productId) {
