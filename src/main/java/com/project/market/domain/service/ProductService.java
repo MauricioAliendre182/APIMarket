@@ -34,6 +34,10 @@ public class ProductService {
         return productRepositoryDTO.save(product);
     }
 
+    public Product update(Product product, Product productUpdate) {
+        return productRepositoryDTO.update(product, productUpdate);
+    }
+
     public boolean delete(int productId) {
         // Alternative
 //        if (getProduct((productId)).isPresent()) {

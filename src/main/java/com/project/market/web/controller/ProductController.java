@@ -82,7 +82,7 @@ public class ProductController {
             @RequestBody Product product
     ) {
         return productService.getProduct(productId)
-                .map(productUpdate -> new ResponseEntity<>(productService.save(product), HttpStatus.OK))
+                .map(productUpdate -> new ResponseEntity<>(productService.update(productUpdate, product), HttpStatus.OK))
                 .orElse(new ResponseEntity<>(HttpStatus.NOT_FOUND));
     }
 

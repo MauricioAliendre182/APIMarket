@@ -55,6 +55,16 @@ public class ProductRepository implements ProductRepositoryDTO {
     }
 
     @Override
+    public Product update(Product product, Product productUpdate) {
+        productUpdate.setActive(product.isActive());
+        productUpdate.setCategoryId(product.getCategoryId());
+        productUpdate.setName(product.getName());
+        productUpdate.setPrice(product.getPrice());
+        productUpdate.setStock(product.getStock());
+        return save(productUpdate);
+    }
+
+    @Override
     public void delete(int productId) {
         productCrudReposittory.deleteById(productId);
     }
