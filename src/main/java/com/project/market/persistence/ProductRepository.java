@@ -57,11 +57,21 @@ public class ProductRepository implements ProductRepositoryDTO {
     @Override
     public Product update(Product product, Product productUpdated, int productId) {
         productUpdated.setProductId(productId);
-        productUpdated.setActive(product.isActive());
-        productUpdated.setCategoryId(product.getCategoryId());
-        productUpdated.setName(product.getName());
-        productUpdated.setPrice(product.getPrice());
-        productUpdated.setStock(product.getStock());
+        if (productUpdated.isActive() != product.isActive()) {
+            productUpdated.setActive(product.isActive());
+        }
+        if (productUpdated.getCategoryId() != product.getCategoryId()) {
+            productUpdated.setCategoryId(product.getCategoryId());
+        }
+        if (!productUpdated.getName().equalsIgnoreCase(product.getName())){
+            productUpdated.setName(product.getName());
+        }
+        if (productUpdated.getPrice() != product.getPrice()) {
+            productUpdated.setPrice(product.getPrice());
+        }
+        if (productUpdated.getStock() != product.getStock()) {
+            productUpdated.setStock(product.getStock());
+        }
         return save(productUpdated);
     }
 
