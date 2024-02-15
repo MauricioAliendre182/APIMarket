@@ -1,6 +1,7 @@
 plugins {
 	java
 	jacoco
+	application
 	id("org.springframework.boot") version "3.1.3"
 	id("io.spring.dependency-management") version "1.1.3"
 }
@@ -11,6 +12,10 @@ version = "1.0"
 
 jacoco {
 	toolVersion = "0.8.9"
+}
+
+application {
+	mainClass.set("com.project.market.MarketApplication")
 }
 
 java {
