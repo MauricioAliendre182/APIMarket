@@ -48,12 +48,12 @@ This endpoints has to be executed from Post as following:
 
 ### Local way
 
-To execute the project in local way, you need to execcute the next line in the command line:
+To execute the project in local way, you need to execute the next line in the command line:
 ```bash
 java -jar -Dspring.profiles.active=dev gradle/wrapper/market-1.0.jar
 ```
 
-This will execute the jar file in **development environment**, for this it is neccesary to have PostgreSQL and have a database called **market**, after this please execute the querys which are present in the **.sql** files
+This will execute the jar file in **development environment**, for this it is necessary to have PostgreSQL and have a database called **market**, after this please execute the querys which are present in the **.sql** files
 
 ### Current Domain
 
